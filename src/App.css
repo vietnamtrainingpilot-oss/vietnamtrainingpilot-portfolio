@@ -1,0 +1,51 @@
+/* App-specific styles */
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Smooth page transitions */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Ensure sections have proper spacing and alignment */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Hero entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(195, 228, 29, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(195, 228, 29, 0.2);
+  }
+}
